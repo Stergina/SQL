@@ -52,5 +52,4 @@ You will first create the database and upload the data to the tables, following 
 
 
 - Question 3.2: Consider the following question in natural language: "Show the titles of films in which only male actors participate." Write at least two different queries in SQL that answer the above question. Then create appropriate indexes to speed up query execution. The aim is to come up with a query, which in combination with appropriate indexes, you consider to be the most cost-effective (lower execution cost).
-Provide evidence that confirms the validity of your claims.
 
