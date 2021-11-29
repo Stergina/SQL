@@ -7,38 +7,45 @@ firstName varchar(100),
 lastname varchar(100),
 gender char(1)
 );
+
 create table directors
 (did int primary key,
 firstName varchar(100),
 lastname varchar(100)
 );
+
 create table movies
 (mid int primary key,
 title varchar(200),
 pyear int,
 mrank decimal(2,1)
 );
+
 create table movie_directors
 ( did int foreign key references directors(did),
 mid int foreign key references movies(mid)
 primary key(mid, did),
 );
+
 create table roles
 ( aid int foreign key references actors(aid),
 mid int foreign key references movies(mid),
 a_role varchar(100),
 primary key (mid,aid)
 );
+
 create table movies_genre
 (mid int foreign key references movies(mid),
 genre varchar(100),
 );
+
 create table users
 (userid int primary key,
 uname varchar(50),
 gender char(1),
 age int
 );
+
 create table user_movies
 (userid int foreign key references users(userid),
 mid int foreign key references movies(mid),
@@ -50,24 +57,32 @@ primary key (mid,userid)
 BULK INSERT actors
 FROM 'C:\data\actors.txt'
 WITH (FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
 BULK INSERT directors
 FROM 'C:\data\directors.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
 BULK INSERT movies
 FROM 'C:\data\movies.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
 BULK INSERT movie_directors
 FROM 'C:\data\movie_directors.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
+
 BULK INSERT movies_genre
 FROM 'C:\data\movies_genre.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
 BULK INSERT roles
 FROM 'C:\data\roles.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
 BULK INSERT users
 FROM 'C:\data\users.txt'
 WITH (FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
+
 BULK INSERT user_movies
 FROM 'C:\data\user_movies.txt'
 WITH (FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
