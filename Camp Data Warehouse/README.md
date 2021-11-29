@@ -7,7 +7,7 @@ You will first create the database and upload the data to the tables, following 
 
 **Implementation**:  
 
--- Question 1.1: Create CAMPDW database, campdata table and load CAMPDATA.TXT data into campdata table
+- Question 1.1: Create CAMPDW database, campdata table and load CAMPDATA.TXT data into campdata table
 
 - Question 1.2: Create the star schema for the data warehouse
 
