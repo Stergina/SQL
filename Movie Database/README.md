@@ -26,3 +26,24 @@ You will first create the database and upload the data to the tables, following 
   *\-select userid, count (rating)*
   
   *\-from user_movies group by userid order by userid*
+
+
+
+- Question 3: The following question displays the titles of the movies that belong to the 'Adventure' category or to the 'Action' category or to both categories:
+
+  *\-select title*
+  
+  *\-from movies, movies_genre*
+  
+  *\-where movies.mid = movies_genre.mid and genre = 'Adventure'*
+  
+  *\-UNION*
+  
+  *\-select title*
+  
+  *\-from movies, movies_genre*
+  
+  *\-where movies.mid = movies_genre.mid and genre = 'Action'*
+  
+  
+Write a more efficient query in SQL that gives the same results as above (the order of the results does not matter). Create an appropriate index or indexes that speed up the execution of the query you wrote.
