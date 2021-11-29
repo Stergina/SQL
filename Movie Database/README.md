@@ -8,6 +8,7 @@ You will first create the database and upload the data to the tables, following 
 **Implementation**:  
 
 - Question 1
+
 Create a single index that speeds up the execution of all three queries below.
 *\select title from movies where pyear between 1990 and 2000*
 *\select pyear, title from movies where pyear between 1990 and 2000*
@@ -15,6 +16,7 @@ Create a single index that speeds up the execution of all three queries below.
 *\order by pyear, title*
 
 - Question 2
+
 The following two queries display the total number of ratings per movie code and user code respectively where the frequency of queries is the same. Assuming you can create a single index, which index would you choose to create?
 *\select mid, count (rating)*
 *\from user_movies group by mid order by mid*
