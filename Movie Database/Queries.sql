@@ -70,7 +70,6 @@ BULK INSERT movie_directors
 FROM 'C:\data\movie_directors.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
 
-
 BULK INSERT movies_genre
 FROM 'C:\data\movies_genre.txt'
 WITH ( FIRSTROW =2, FIELDTERMINATOR= '|', ROWTERMINATOR = '\n');
