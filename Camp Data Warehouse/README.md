@@ -1,9 +1,7 @@
 # Camp Data Warehouse
 
 **Objective**:  
-The aim of this project is the practical application of indexing and optimizing SQL queries. The database contains information about movies.
-You will first create the database and upload the data to the tables, following the instructions below. Then you will answer the questions of the job.
-
+Design and implemention of a data warehouse of a company that operates in the field of tourism has a number of camps in Greek mainland and islands. 
 
 **Implementation**:  
 
