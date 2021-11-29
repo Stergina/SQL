@@ -29,7 +29,7 @@ You will first create the database and upload the data to the tables, following 
 
 
 
-- Question 3: The following question displays the titles of the movies that belong to the 'Adventure' category or to the 'Action' category or to both categories:
+- Question 3.1: The following question displays the titles of the movies that belong to the 'Adventure' category or to the 'Action' category or to both categories:
 
   *select title*
   
@@ -47,3 +47,10 @@ You will first create the database and upload the data to the tables, following 
   
   
   Write a more efficient query in SQL that gives the same results as above (the order of the results does not matter). Create an appropriate index or   indexes that speed up the execution of the query you wrote.
+
+
+
+
+- Question 3.2: Consider the following question in natural language: "Show the titles of films in which only male actors participate." Write at least two different queries in SQL that answer the above question. Then create appropriate indexes to speed up query execution. The aim is to come up with a query, which in combination with appropriate indexes, you consider to be the most cost-effective (lower execution cost).
+Provide evidence that confirms the validity of your claims.
+
